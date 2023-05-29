@@ -5,8 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      /* .allLabelDivContainer {
+        display: flex;
+        margin: 0 20% ;
+        mar
+      } */
+    </style>
   </head>
   <body>
-    <div>Hello</div>
+    <h2 class="Title">Add Form Control</h2>
+    <div class="container">
+      <div class="selectElements">
+        <select
+          name="options"
+          id="optionsElements"
+          onselect="getOptionsFromSelectElementsList()"
+        >
+          <option value="Select">Select</option>
+          <option value="Text">Text</option>
+          <option value="Number">Number</option>
+          <option value="Email">Email</option>
+          <option value="Radio">Radio</option>
+          <option value="Select">Select</option>
+          <option value="Checkbox">Checkbox</option>
+          <option value="Submit">Submit</option>
+        </select>
+
+        <button id="buttonToGetValuesFromSelectElements">Add</button>
+      </div>
+
+      <div class="labelElementsInputs">
+        <div class="allLabelDivContainer">
+          <div class="labelInputs">
+            <!-- <input type="text" /> -->
+          </div>
+          <div class="labelValues">
+            <!-- <input type="text" /> -->
+          </div>
+          <div class="labelButtons">
+            <!-- <button>X</button> -->
+          </div>
+          <!-- <button>Submit</button> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container">
+      <div class="addInputElements">
+        <div class="allInputDivContainer">
+          <div class="labelSection">
+            <input type="text" />
+          </div>
+
+          <div class="inputValueSection">
+            <input type="text" />
+          </div>
+          <button>S</button>
+        </div>
+      </div>
+
+      <div class="formSubmitSection">
+        <div class="printValue">
+          <div class="printLabelValues"></div>
+          <div class="printInputValues"></div>
+        </div>
+      </div>
+    </div> -->
+    <script src="DynamicForm.js"></script>
   </body>
 </html>
